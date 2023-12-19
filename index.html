@@ -11,23 +11,41 @@
 <body>
     <main>
         <header>
-            <div class="navbar">
+            <div class="navbar" style="display: none;">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#adver">Advertisement</a>
                 <a href="#info">Info</a>
             </div>
         </header>
-        <section>
-            <div id="about" class="about">
-                <div class="about1">
-                    <h1>SHOP BÁNH NGỌT</h1>
-                    <hr style="width: 100px;">
-                    <p>Vị Ngon Cuộc Sống</p>
+        <section class="body-info">
+            <div id="about" class="about-big">
+                <div class="about">
+                    <div class="about1">
+                        <h1>SHOP BÁNH NGỌT</h1>
+                        <hr style="width: 100px; margin-left: 10px;">
+                        <p style="padding-left: 20px;">Vị Ngon Cuộc Sống</p>
+                    </div>
+                    <div class="about2">
+                        <button class="btn-order" onclick="loadDoc()">Đặt hàng ngay</button>
+                        <p id="demo">Đặt hàng liên tục có bánh ăn ngay</p>
+                    </div>
                 </div>
-                <div class="about2">
-                    <button class="btn-order">Đặt hàng ngay</button>
-                    <p>Đặt hàng liên tục có bánh ăn ngay</p>
+                <img style="border-radius: 100%; width: 12rem; height: 12rem; position: absolute; top: 10rem; left: 55%; z-index: 1;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+                    alt="image-about1">
+                <img style="position: absolute;border-top-left-radius: 50px; border-bottom-right-radius: 50px; width: 400px; height: 270px; top: 1rem; right: 2em;"
+                    src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg" alt="image-about2">
+                <div class="idea">
+                    <img style="border-radius: 10px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYscfUBUbqwGd_DHVhG-ZjCOD7MUpxp4uhNe7toUg4ug&s"
+                        alt="">
+                    <div class="info-idea">
+                        <p style="margin-bottom: 1rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio vitae labore
+                            dolores!
+                            Aliquam minima accusamus consectetur tenetur?</p>
+                    </div>
                 </div>
             </div>
             <div id="adver" class="adver">
@@ -36,32 +54,139 @@
                 <div class="adver-item">30+ Món bánh</div>
                 <div class="adver-item">3 Chi nhánh</div>
             </div>
-            <div class="product">
-                <h1>Bán Chạy Nhất</h1>
-                <div class="product-div">
-                    <div class="product-item">
-                        <img src="" alt="" width="100px" height="100px">
-                        <h1>Tiramisu</h1>
+            <div class="body-product">
+                <div class="product">
+                    <h1>BÁN CHẠY NHẤT</h1>
+                    <div class="product-div">
+                        <div class="product-item">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.hGXlYNOoAMx1uL6NSHjBfgHaE6&pid=Api&P=0&h=180"
+                                alt="">
+                            <h1>Tiramisu</h1>
+                            <p>80.000 Đ</p>
+                            <button>MUA NGAY</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.hGXlYNOoAMx1uL6NSHjBfgHaE6&pid=Api&P=0&h=180"
+                                alt="">
+                            <h1>Tiramisu</h1>
+                            <p>80.000 Đ</p>
+                            <button>MUA NGAY</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.hGXlYNOoAMx1uL6NSHjBfgHaE6&pid=Api&P=0&h=180"
+                                alt="">
+                            <h1>Tiramisu</h1>
+                            <p>80.000 Đ</p>
+                            <button>MUA NGAY</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.hGXlYNOoAMx1uL6NSHjBfgHaE6&pid=Api&P=0&h=180"
+                                alt="">
+                            <h1>Tiramisu</h1>
+                            <p>80.000 Đ</p>
+                            <button>MUA NGAY</button>
+                        </div>
                     </div>
-                    <div class="product-item">
-                        <img src="" alt="" width="100px" height="100px">
-                        <h1>Tiramisu</h1>
+                </div>
+                <div class="list-cake">
+                    <h1>DANH SÁCH MÓN</h1>
+                    <div class="cake-info">
+                        <div class="cake-info-item">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.hGXlYNOoAMx1uL6NSHjBfgHaE6&pid=Api&P=0&h=180"
+                                alt="" width="100px" height="100px">
+                            <hr>
+                            <h1>Cupcake</h1>
+                            <p>80.000 Đ</p>
+                        </div>
+                        <div class="cake-info-item">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.hGXlYNOoAMx1uL6NSHjBfgHaE6&pid=Api&P=0&h=180"
+                                alt="" width="100px" height="100px">
+                            <hr>
+                            <h1>Su kem</h1>
+                            <p>80.000 Đ</p>
+                        </div>
+                        <div class="cake-info-item">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.hGXlYNOoAMx1uL6NSHjBfgHaE6&pid=Api&P=0&h=180"
+                                alt="" width="100px" height="100px">
+                            <hr>
+                            <h1>Bông lan</h1>
+                            <p>80.000 Đ</p>
+                        </div>
                     </div>
-                    <div class="product-item">
-                        <img src="" alt="" width="100px" height="100px">
-                        <h1>Tiramisu</h1>
+                </div>
+                <div class="response">
+                    <h1>PHẢN HỒI TỪ KHÁCH HÀNG</h1>
+                    <hr>
+                    <div class="response-1">
+                        <div class="response-avatar">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9FkZMKVb0I8r5goIIEjxlJSp3MKdRX7_DQfTl_3bSKA&s"
+                                alt="">
+                            <h1>Chị A</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                     </div>
-                    <div class="product-item">
-                        <img src="" alt="" width="100px" height="100px">
-                        <h1>Tiramisu</h1>
+                    <div class="response-2">
+                        <div class="response-avatar">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9FkZMKVb0I8r5goIIEjxlJSp3MKdRX7_DQfTl_3bSKA&s"
+                                alt="">
+                            <h1>Chị A</h1>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="order-info">
+                        <p>✅ Lorem ipsum dolor sit amet consectetur</p>
+                        <p>✅ Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam a quisquam</p>
+                        <p>✅ Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam a quisquam</p>
+                    </div>
+                    <div class="order-form">
+                        <form class="form" action="">
+                            <h1>ĐẶT ĐI CHỜ CHI</h1>
+                            <input placeholder="Họ và tên" type="text">
+                            <input placeholder="Số điện thoại" type="text">
+                            <select name="" id="">
+                                <option value="">Sản phẩm A</option>
+                                <option value="">Sản phẩm B</option>
+                                <option value="">Sản phẩm C</option>
+                            </select>
+                            <input placeholder="Chọn sản phẩm" type="text">
+                            <button>ĐẶT NGAY</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <footer id="Info">
-
+        <footer id="info" class="footer">
+            <div class="info-company">
+                <div class="left-info" style="height: 200px;">
+                    <p>🏘 Address: Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <p>🕻 Telephone: 0123456789</p>
+                    <p>✉ Email: info@gmail.com</p>
+                    <p>𑇤 Website: https://a.com</p>
+                </div>
+                <!-- <div class="right-info">
+                    <div id="googleMap" style="width:400px;height:300px;"></div>
+                </div> -->
+            </div>
+            <div class="social-media">
+                <div class="social-media-item">
+                    <img src="https://www.svgrepo.com/show/333535/facebook-circle.svg" alt="" width="30px"
+                        height="30px">
+                    <p>Facebook</p>
+                </div>
+                <div class="social-media-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="" width="30px"
+                        height="30px">
+                    <p>Website</p>
+                </div>
+            </div>
         </footer>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVdlL1S8YbTZEx0ia5uVZMQPOEYM7U3pQ&callback=myMap"></script>
 </body>
 
 </html>

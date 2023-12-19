@@ -4,7 +4,7 @@
 }
 
 main {
-    background: pink;
+    background-image: linear-gradient(to left, #FFB6C1, #FFF0F5);
 }
 
 .navbar {
@@ -36,13 +36,80 @@ section {
     align-items: center;
 }
 
-.about {
-    background-color: white;
-    width: 1000px;
+.body-product {
+    width: 100%;
+    background-image: linear-gradient(18deg, white, pink, white);
+    padding: 50px 0;
+}
+
+.response {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.response hr {
+    margin-top: 5px;
+    width: 100px;
+    height: 4px;
+    background-color: black;
+}
+
+.response-1 img,
+.response-2 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    padding-right: 10px;
+}
+
+.response-avatar {
     margin: 10px;
+    display: flex;
+}
+
+.about-big {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2em;
+}
+
+.about {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.about1,
+.about2 {
+    width: 14rem;
+    padding-left: 10em;
+}
+
+.about2 {
+    text-align: center;
+}
+
+.idea {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 7rem;
+}
+
+.info-idea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
 }
 
 .btn-order {
@@ -52,6 +119,7 @@ section {
     padding: 10px 5px;
     cursor: pointer;
     border-left: 10px;
+    border-radius: 10px;
 }
 
 .adver {
@@ -60,6 +128,7 @@ section {
     justify-content: center;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm7aV1yELExAt2CPTCI7_JTSHlQJKK3TMXbw&usqp=CAU");
     background-size: cover;
+    padding: 1rem 0;
 }
 
 .adver-item {
@@ -76,10 +145,154 @@ section {
 
 .product {
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .product-div {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    margin: 10px;
+    padding: 10px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 5px 10px 8px #FFF0F5;
+}
+
+.product-item button {
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: orange;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.product-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+}
+
+.list-cake {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cake-info-item {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 18rem;
+    background-color: white;
+    box-shadow: 5px 10px 8px #FFF0F5;
+}
+
+.cake-info-item img {
+    width: 200px;
+    height: 200px;
+}
+
+.cake-info-item hr {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+}
+
+.cake-info {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.order {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.order-info {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-form {
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form button {
+    color: white;
+    background-color: orange;
+    border-color: black;
+    padding: 10px 5px;
+    cursor: pointer;
+    border-left: 10px;
+    border-radius: 10px;
+}
+
+.form input,
+select {
+    height: 30px;
+    padding: 5px;
+}
+
+/* footer */
+.footer {
+    background-image: linear-gradient(#FFFAF0, #A9A9A9);
+    padding-top: 50px;
+}
+
+/* info-company */
+.info-company {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.left-info p {
+    padding: 10px;
+}
+
+/* social */
+.social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
 }
